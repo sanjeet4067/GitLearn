@@ -15,6 +15,14 @@ class ViewController: UIViewController {
         print("Hello World!")
     }
 
-
+    @IBAction func btnClickMeTapped(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "GitLearn", message: "You tapped on button", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true)
+        
+        
+    }
+    
 }
 
